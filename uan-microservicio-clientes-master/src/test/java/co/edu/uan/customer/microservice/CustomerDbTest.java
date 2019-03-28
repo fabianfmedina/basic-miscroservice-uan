@@ -57,7 +57,7 @@ public class CustomerDbTest {
 
 	@Test
 	public void testDatabaseConnection() {
-		Query query = entityManager.createNativeQuery("SELECT 1");
+		Query query = entityManager.createNativeQuery("SELECT * FROM customer");
 		assertEquals(BigInteger.valueOf(1L), query.getSingleResult());
 	}
 	
